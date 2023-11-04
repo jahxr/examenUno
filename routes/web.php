@@ -19,18 +19,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/directorio', [DirectorioController::class ,'index'])->name{'directorioo'};
+Route::get('/directorio', [DirectorioController::class ,'index'])->name('directorioo');
 
 
 Route::get('/contacto/vercontactos', [ContactoController::class ,'vercontactos']);
 
-Route::get('/contacto/crearEntrada', [ContactoController::class ,'create'])->name{'crearEntrada'};
+Route::get('/contacto/crearEntrada', [ContactoController::class ,'create'])->name('crearEntrada');
 
-Route::get('/contacto/buscarentrada', [ContactoController::class ,'buscarentrada'])->name{'buscarentrada'};
+Route::get('/contacto/buscarentrada', [ContactoController::class ,'buscarentrada'])->name('buscarentrada');
 
-Route::get('/contacto/ver', [ContactoController::class ,'ver'])->name{'ver'};
+Route::get('/contacto/ver', [ContactoController::class ,'ver'])->name('ver');
 
-Route::get('/contacto/ver', [ContactoController::class ,'eliminar'])->name{'eliminar'};
+Route::get('/contacto/ver', [ContactoController::class ,'eliminar'])->name('eliminar');
 
 
 
