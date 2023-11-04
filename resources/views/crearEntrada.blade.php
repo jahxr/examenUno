@@ -57,7 +57,7 @@
                                         
                                         
                                         <button class="btn btn-primary">Guardar</button>
-                                        <a href="#" class="btn btn-info">Regresar</a>
+                                        <a href="{{route('directorioo')}}" class="btn btn-info">Regresar</a>
                                         
                                     </form>
                                 </p>

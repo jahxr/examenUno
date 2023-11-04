@@ -50,7 +50,7 @@
 
                     <p>
                         <button class="btn btn-primary">Agregar nuevo contacto</button>
-                        <a href="#" class="btn btn-info">Regresar</a>
+                        <a href="{{route('directorioo')}}" class="btn btn-info">Regresar</a>
                     </p>
 
                     <table class="table">
