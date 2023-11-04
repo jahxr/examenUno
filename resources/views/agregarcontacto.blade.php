@@ -28,6 +28,7 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
+                color:white;
             }
         </style>
     </head>
@@ -43,7 +44,9 @@
                             <h3 class="card-header">Agregar Contacto</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    <form>
+                                    <form method="POST" action="{{route('guardarcontacto')}}">
+                                        @csrf
+                                     @method('POST')
                                         <label for="">C&oacute;digo de entrada</label>
                                         <input type="text" name="codigo" class="form-control" readonly>
                                         <label for="">Nombre</label>
@@ -53,7 +56,7 @@
                                         <label for="">Tel&eacute;fono</label>
                                         <input type="text" name="telefono" class="form-control">
                                         
-                                        <button class="btn btn-primary">Guardar</button>
+                                        <button type="submit" class="btn btn-primary">Guardar</button>
                                         <a href="#" class="btn btn-info">Regresar</a>
                                         
                                     </form>

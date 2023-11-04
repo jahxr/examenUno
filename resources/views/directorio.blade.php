@@ -32,18 +32,16 @@
                         <th scope="col">Eliminar</th>
                     </thead>
                     <tbody>
-                            <tr>
-                                <td>0001</td>
-                                <td>Julio</td>
-                                <td>Cortez</td>
-                                <td>9999</td>
-                                <td>
-                                    <a href="{{route('ver')}}" class="btn btn-info">Ver</a>
-                                </td>
-                                <td>
-                                    <a href="{{route('eliminar')}}" class="btn btn-danger">Eliminar</a>
-                                </td>
-                            </tr>
+                    @foreach ($directorios as $item)
+                        <tr>
+                            <td>{{$item->codigo}}</td>
+                            <td>{{$item->nombre}}</td>
+                            <td>{{$item->apellido}}</td>
+                            <td>{{$item->telefono}}</td>
+                            <td><a class="btn btn-primary" href="#">Ver</a></td>
+                            <td><a class="btn btn-danger" href="#">Eliminar</a></td>
+                        </tr>
+                        @endforeach
                     </tbody>
 
                 </table>

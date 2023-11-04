@@ -9,4 +9,6 @@ class directorio extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    protected $primarykey="codigoEntrada";
+    public $incrementing=true;
 }

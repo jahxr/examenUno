@@ -28,6 +28,7 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
+                color:white;
             }
         </style>
     </head>
@@ -43,7 +44,9 @@
                             <h3 class="card-header">Crear Nueva Entrada Directorio</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    <form>
+                                    <form method="POST" action="{{route('guardarEntrada')}}">
+                                    @csrf
+                                     @method('POST')
                                         <label for="">C&oacute;digo</label>
                                         <input type="text" name="codigo" class="form-control">
                                         <label for="">Nombre</label>
